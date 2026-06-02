@@ -1,0 +1,25 @@
+node_modules
+dist
+.env
+.env.local
+.DS_Store
+Thumbs.db
+.vscode
+
+# Large project bundles / separate projects
+*.zip
+tablet-bundle.zip
+tablet-bundle-folder.zip
+
+node_modules
+dist
+.env
+.env.local
+.DS_Store
+Thumbs.db
+.vscode
+
+# Separate tablet/demo bundles - not part of homepage repo
+*.zip
+tablet-bundle/
+tablet-bundle-folder/
