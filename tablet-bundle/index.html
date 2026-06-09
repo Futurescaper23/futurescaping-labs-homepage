@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FutureScaping Labs showcases interactive geospatial demo systems for monitoring, visualising and understanding changing places."
+    />
+    <title>FutureScaping Labs</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="hero" id="top">
+        <section class="fs-shell fs-shell--monitoring" id="showcase" data-shell>
+          <div class="fs-shell__stage">
+            <div class="fs-shell__scene is-active" data-scene-index="0">
+              <div class="fs-shell__media-group">
+                <div class="fs-shell__primary-visual">
+                  <img
+                    class="fs-shell__image"
+                    src="./assets/monitoring-sections-inset.png"
+                    alt="Monitoring section profiles and height difference view"
+                  />
+                  <div class="fs-shell__scene-grid"></div>
+                  <div class="fs-shell__detail-card fs-shell__detail-card--monitoring">
+                    <img
+                      src="./assets/monitoring-hero-island.png"
+                      alt="Monitoring system island overview with section profiles focus"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fs-shell__scene" data-scene-index="1" aria-hidden="true">
+              <div class="fs-shell__media-group">
+                <div class="fs-shell__primary-visual">
+                  <img
+                    class="fs-shell__image"
+                    src="./assets/survey-evidence-hero.png"
+                    alt="Survey evidence planning workspace hero image"
+                  />
+                  <div class="fs-shell__scene-grid"></div>
+                  <div class="fs-shell__detail-card fs-shell__detail-card--siteview">
+                    <img
+                      src="./assets/survey-evidence-inset.png"
+                      alt="Survey evidence layer comparison inset showing orthomosaic and height colours"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fs-shell__scene" data-scene-index="2" aria-hidden="true">
+              <div class="fs-shell__media-group">
+                <div class="fs-shell__primary-visual fs-shell__primary-visual--masked">
+                  <img
+                    class="fs-shell__image"
+                    src="./assets/siteview-hero-new.png"
+                    alt="SiteView planning evidence terrain model preview"
+                  />
+                  <div class="fs-shell__scene-grid"></div>
+                  <div class="fs-shell__detail-card fs-shell__detail-card--evidence">
+                    <img
+                      src="./assets/siteview-inset.png"
+                      alt="SiteView detailed shed visual inset"
+                    />
+                  </div>
+                  <div class="fs-shell__scene-mask">
+                    <span class="coming-lockup">
+                      <strong>FutureScaping Labs</strong>
+                      <em>Coming soon</em>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fs-shell__glow"></div>
+
+            <div class="fs-shell__copy">
+              <div class="fs-shell__brand">
+                <div class="fs-shell__mark" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div>
+                  <p class="fs-shell__brandname">FutureScaping Labs</p>
+                  <p class="fs-shell__brandsub">Geospatial demo suite</p>
+                </div>
+              </div>
+              <p class="fs-shell__eyebrow" data-shell-eyebrow>Flagship demo</p>
+              <h1 class="fs-shell__title" data-shell-title>Monitoring System</h1>
+              <p class="fs-shell__summary" data-shell-summary>
+                Visual change monitoring for coastal landscapes, repeat surveys and surface
+                change evidence.
+              </p>
+            </div>
+
+            <div class="fs-shell__nav">
+              <div class="fs-shell__nav-list">
+                <button class="fs-shell__nav-item is-active" type="button" data-nav-index="0" aria-pressed="true">
+                  <svg class="fs-shell__nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 18V9"></path>
+                    <path d="M12 18V5"></path>
+                    <path d="M19 18v-7"></path>
+                  </svg>
+                  <span class="fs-shell__nav-label">Monitoring</span>
+                </button>
+                <button class="fs-shell__nav-item" type="button" data-nav-index="1" aria-pressed="false">
+                  <svg class="fs-shell__nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 6h16v12H4z"></path>
+                    <path d="M12 6v12"></path>
+                    <path d="M4 12h16"></path>
+                  </svg>
+                  <span class="fs-shell__nav-label">SiteView</span>
+                </button>
+                <button class="fs-shell__nav-item" type="button" data-nav-index="2" aria-pressed="false">
+                  <svg class="fs-shell__nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 4v16"></path>
+                    <path d="M12 4v16"></path>
+                    <path d="M18 4v16"></path>
+                  </svg>
+                  <span class="fs-shell__nav-label">Evidence</span>
+                </button>
+              </div>
+            </div>
+            <div class="fs-shell__reel">
+              <button class="fs-shell__reel-item is-active" type="button" data-reel-index="0">
+                <span>01</span>
+                <strong>Monitoring System</strong>
+              </button>
+              <button class="fs-shell__reel-item" type="button" data-reel-index="1">
+                <span>02</span>
+                <strong>SiteView Planning Evidence</strong>
+              </button>
+              <button class="fs-shell__reel-item" type="button" data-reel-index="2">
+                <span>03</span>
+                <strong>Survey Evidence Pack</strong>
+              </button>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <section class="section demo-section" id="demo-systems">
+        <div class="section-header">
+          <p class="eyebrow">Demo systems</p>
+          <h2>Three front-end demos ready for live conversations</h2>
+          <p>
+            Each one is designed to feel like a product preview rather than a brochure page,
+            so clients can quickly understand the value of the workflow.
+          </p>
+        </div>
+        <div class="demo-grid">
+          <article class="demo-card demo-card-monitoring">
+            <div class="card-topline">
+              <span class="status-badge">Flagship demo</span>
+            </div>
+            <h3>FutureScaping Monitoring System</h3>
+            <p class="card-description">
+              A visual monitoring dashboard for repeatable surveys, imagery and change
+              evidence.
+            </p>
+            <div class="card-preview">
+              <img src="./assets/monitoring-sections-inset.png" alt="" />
+            </div>
+            <div class="use-case-block">
+              <span>Use cases</span>
+              <p>
+                Estuaries, coastlines, rivers, harbour authorities, construction sites,
+                erosion monitoring, habitat restoration, earthworks and land management.
+              </p>
+            </div>
+              <a class="demo-button" href="./monitoring/index.html">
+              Launch Monitoring Demo
+              <svg aria-hidden="true" viewBox="0 0 20 20" focusable="false">
+                <path
+                  d="M4 10h10.2m-4-4 4 4-4 4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                ></path>
+              </svg>
+            </a>
+          </article>
+
+          <article class="demo-card demo-card-siteview">
+            <div class="card-topline">
+              <span class="status-badge">Demo system</span>
+            </div>
+            <h3>FutureScaping SiteView</h3>
+            <p class="card-description">
+              An interactive site presentation system for drone imagery, 3D models and guided viewpoints.
+            </p>
+            <div class="card-preview">
+              <img src="./assets/survey-evidence-hero.png" alt="" />
+            </div>
+            <div class="use-case-block">
+              <span>Use cases</span>
+              <p>
+                Landscape design, planning visuals, estates, construction progress, client presentations and stakeholder engagement.
+              </p>
+            </div>
+            <a class="demo-button" href="./siteview/index.html">Launch SiteView Demo</a>
+          </article>
+
+          <article class="demo-card demo-card-evidence">
+            <div class="card-topline">
+              <span class="soon-badge">Coming soon</span>
+            </div>
+            <h3>FutureScaping Survey Evidence Pack</h3>
+            <p class="card-description">
+              A deliverables-led site workspace for drone outputs, planning context, downloadable PDFs and mapped evidence.
+            </p>
+            <div class="card-preview card-preview--masked">
+              <img src="./assets/siteview-hero-new.png" alt="" />
+              <div class="card-preview__veil">
+                <span class="coming-lockup">
+                  <strong>FutureScaping Labs</strong>
+                  <em>Coming soon</em>
+                </span>
+              </div>
+            </div>
+            <div class="use-case-block">
+              <span>Use cases</span>
+              <p>
+                Early-stage design input, planning support, site understanding, PDF downloads, mapped deliverables and client presentation.
+              </p>
+            </div>
+            <span class="demo-button disabled" aria-disabled="true">Coming soon</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section use-cases-section">
+        <div class="section-header">
+          <p class="eyebrow">Use cases</p>
+          <h2>Built around real site and landscape needs</h2>
+        </div>
+        <div class="use-case-grid">
+          <article class="use-case-card">
+            <div class="use-case-visual"><img src="./assets/use-case-coastal.svg" alt="" /></div>
+            <p>Coastal and estuary monitoring</p>
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-visual"><img src="./assets/use-case-river.svg" alt="" /></div>
+            <p>Riverbank and erosion monitoring</p>
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-visual"><img src="./assets/use-case-construction.svg" alt="" /></div>
+            <p>Construction progress</p>
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-visual"><img src="./assets/use-case-estate.svg" alt="" /></div>
+            <p>Landscape and estate management</p>
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-visual"><img src="./assets/use-case-habitat.svg" alt="" /></div>
+            <p>Habitat restoration</p>
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-visual"><img src="./assets/use-case-presentation.svg" alt="" /></div>
+            <p>Survey presentation</p>
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-visual"><img src="./assets/use-case-stakeholder.svg" alt="" /></div>
+            <p>Stakeholder engagement</p>
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-visual"><img src="./assets/use-case-planning.svg" alt="" /></div>
+            <p>Planning and visual communication</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="section-header">
+          <p class="eyebrow">How it works</p>
+          <h2>From survey data to a client-ready dashboard</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-step">
+            <div class="timeline-step__top">
+              <span class="timeline-step__number">01</span>
+              <div class="timeline-step__track" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <p>Capture or receive survey data</p>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step__top">
+              <span class="timeline-step__number">02</span>
+              <div class="timeline-step__track" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <p>Process maps, models and imagery</p>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step__top">
+              <span class="timeline-step__number">03</span>
+              <div class="timeline-step__track" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <p>Build an interactive visual dashboard</p>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step__top">
+              <span class="timeline-step__number">04</span>
+              <div class="timeline-step__track" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <p>Compare change over time</p>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step__top">
+              <span class="timeline-step__number">05</span>
+              <div class="timeline-step__track" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <p>Share with clients and stakeholders</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section data-section">
+        <div class="section-header">
+          <p class="eyebrow">Typical data inputs</p>
+          <h2>Designed to bring mixed evidence together</h2>
+        </div>
+        <div class="data-grid">
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-drone.svg" alt="" /></div>
+            <p>Drone imagery</p>
+          </article>
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-aerial.svg" alt="" /></div>
+            <p>Aerial photo maps</p>
+          </article>
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-height.svg" alt="" /></div>
+            <p>Surface-height models</p>
+          </article>
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-model.svg" alt="" /></div>
+            <p>3D models</p>
+          </article>
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-section.svg" alt="" /></div>
+            <p>Section profiles</p>
+          </article>
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-photo.svg" alt="" /></div>
+            <p>Site photography</p>
+          </article>
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-panorama.svg" alt="" /></div>
+            <p>360 panoramas</p>
+          </article>
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-environment.svg" alt="" /></div>
+            <p>Environmental data</p>
+          </article>
+          <article class="data-card data-card--sketch">
+            <div class="data-card__sketch"><img src="./assets/data-input-notes.svg" alt="" /></div>
+            <p>Client notes</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="geo-banner">
+        <div>
+          <p class="eyebrow">GEO Business 2026</p>
+          <h2>Built for real-world geospatial conversations</h2>
+        </div>
+        <p>
+          These demos are being prepared as part of FutureScaping's showcase for GEO Business
+          2026 on 3-4 June 2026 at ExCeL London. They are designed to show how drone and
+          survey data can become monitoring, presentation and decision-making tools.
+        </p>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Interested in a monitoring or visualisation dashboard?</h2>
+          <p>
+            FutureScaping can build bespoke visual systems for sites, landscapes and
+            environments where clear communication of change matters.
+          </p>
+        </div>
+        <div class="contact-card">
+          <strong>Phil Chrimes</strong>
+          <span>FutureScaping</span>
+          <a href="mailto:create@futurescaping.co.uk?subject=FutureScaping%20Labs%20Demo%20Enquiry">
+            create@futurescaping.co.uk
+          </a>
+          <a href="https://futurescaping.co.uk" target="_blank" rel="noreferrer">
+            futurescaping.co.uk
+          </a>
+          <a
+            class="primary-button"
+            href="mailto:create@futurescaping.co.uk?subject=FutureScaping%20Labs%20Demo%20Enquiry"
+          >
+            Contact FutureScaping
+            <svg aria-hidden="true" viewBox="0 0 20 20" focusable="false">
+              <path
+                d="M4 10h10.2m-4-4 4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <span>FutureScaping Labs</span>
+        <a href="https://futurescaping.co.uk" target="_blank" rel="noreferrer">futurescaping.co.uk</a>
+      </footer>
+    </main>
+
+    <script>
+      const scenes = [
+        {
+          theme: "monitoring",
+          eyebrow: "Flagship demo",
+          title: "Monitoring System",
+          summary:
+            "Visual change monitoring for coastal landscapes, repeat surveys and surface change evidence.",
+          pillLabel: "Survey dates",
+          pillValue: "18-19 April 2026",
+          pillSubtext: "Repeatable survey review for the current monitoring window.",
+          dockLabel: "Launch the demo",
+          dockTitle: "FutureScaping Monitoring System",
+          dockCopy:
+            "Open the live monitoring environment for sections, aerial context and change analysis.",
+          actions: [
+            {
+                label: "Open Offline Demo",
+                href: "./monitoring/index.html",
+                primary: true
+              },
+            { label: "Surface change workflow", static: true },
+            { label: "Section evidence", static: true }
+          ]
+        },
+        {
+          theme: "siteview",
+          eyebrow: "Planning and presentation",
+          title: "SiteView Planning Evidence",
+          summary:
+            "See the full picture. Plan with confidence using drone mapping, 3D models, viewpoints and interactive map layers.",
+          pillLabel: "Location",
+          pillValue: "Planning review workspace",
+          pillSubtext: "A polished front-end for landscapes, estates and stakeholder presentations.",
+          dockLabel: "Open the pack",
+          dockTitle: "FutureScaping SiteView",
+          dockCopy:
+            "A generic planning evidence showcase combining context, viewpoints and technical layers in one clear visual experience.",
+          actions: [
+              { label: "Open Offline Demo", href: "./siteview/index.html", primary: true },
+              { label: "3D scene preview", static: true },
+              { label: "Viewpoint review", static: true }
+          ]
+        },
+        {
+          theme: "evidence",
+          eyebrow: "Survey deliverables",
+          title: "Survey Evidence Pack",
+          summary:
+            "Drone survey outputs, plans, PDFs and mapped site evidence brought together in one client-ready workspace.",
+          pillLabel: "Purpose",
+          pillValue: "Survey and planning evidence",
+          pillSubtext: "A deliverables-led workspace for site understanding, design input and downloadable outputs.",
+          dockLabel: "Open the pack",
+          dockTitle: "FutureScaping Survey Evidence Pack",
+          dockCopy:
+            "A premium front-end for drone-derived deliverables, planning visuals and downloadable survey material.",
+          actions: [
+              { label: "Open Offline Demo", href: "./evidence/index.html", primary: true },
+              { label: "Download plans", static: true },
+              { label: "Site deliverables", static: true }
+          ]
+        }
+      ];
+
+      const shell = document.querySelector("[data-shell]");
+      const sceneEls = Array.from(document.querySelectorAll("[data-scene-index]"));
+      const navEls = Array.from(document.querySelectorAll("[data-nav-index]"));
+      const reelEls = Array.from(document.querySelectorAll("[data-reel-index]"));
+      const eyebrowEl = document.querySelector("[data-shell-eyebrow]");
+      const titleEl = document.querySelector("[data-shell-title]");
+      const summaryEl = document.querySelector("[data-shell-summary]");
+      let activeIndex = 0;
+      let timer = null;
+
+      function setActive(index) {
+        activeIndex = index;
+        const scene = scenes[index];
+        shell.className = "fs-shell fs-shell--" + scene.theme;
+        eyebrowEl.textContent = scene.eyebrow;
+        titleEl.textContent = scene.title;
+        summaryEl.textContent = scene.summary;
+
+        sceneEls.forEach((el, elIndex) => {
+          const isActive = elIndex === index;
+          el.classList.toggle("is-active", isActive);
+          el.setAttribute("aria-hidden", isActive ? "false" : "true");
+        });
+        navEls.forEach((el, elIndex) => {
+          const isActive = elIndex === index;
+          el.classList.toggle("is-active", isActive);
+          el.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+        reelEls.forEach((el, elIndex) => {
+          el.classList.toggle("is-active", elIndex === index);
+        });
+      }
+
+      function restartTimer() {
+        if (timer) window.clearInterval(timer);
+        timer = window.setInterval(() => {
+          setActive((activeIndex + 1) % scenes.length);
+        }, 6500);
+      }
+
+      navEls.forEach((el, index) => {
+        el.addEventListener("click", () => {
+          setActive(index);
+          restartTimer();
+        });
+      });
+
+      reelEls.forEach((el, index) => {
+        el.addEventListener("click", () => {
+          setActive(index);
+          restartTimer();
+        });
+      });
+
+      setActive(0);
+      restartTimer();
+    </script>
+  </body>
+</html>

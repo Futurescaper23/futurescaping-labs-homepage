@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureScaping Monitoring System</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../demo-page.css" />
+  </head>
+  <body>
+    <main class="demo-shell">
+      <div class="demo-topbar">
+        <a class="demo-back" href="../index.html">Back to Labs</a>
+      </div>
+
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <div class="brand">
+            <div class="mark" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div>
+              <p class="brand-name">FutureScaping Labs</p>
+              <p class="brand-sub">Monitoring system</p>
+            </div>
+          </div>
+          <p class="eyebrow">Repeatable coastal surveys</p>
+          <div class="hero-heading">
+            <h1>Monitoring<br />System</h1>
+            <p class="summary">
+              Visual change monitoring for coastal landscapes, repeat surveys, section evidence and
+              client-ready environmental context.
+            </p>
+          </div>
+          <p class="mode-lead" data-mode-lead>
+            An imagery-first estuary monitoring workflow built to inspect repeat surveys, explain
+            visible coastal change and give clients a clear route from overview to detailed evidence.
+          </p>
+          <div class="nav-rail" role="tablist" aria-label="Monitoring views">
+            <button class="nav-pill is-active" type="button" data-mode="overview" aria-pressed="true"><span>Overview</span></button>
+            <button class="nav-pill" type="button" data-mode="survey" aria-pressed="false"><span>Survey Areas</span></button>
+            <button class="nav-pill" type="button" data-mode="compare" aria-pressed="false"><span>Compare</span></button>
+            <button class="nav-pill" type="button" data-mode="sections" aria-pressed="false"><span>Sections</span></button>
+          </div>
+        </div>
+
+        <div class="media-stage">
+          <div class="media-glow"></div>
+          <div class="media-gridlines" aria-hidden="true"></div>
+          <div class="media-orbit media-orbit--one" aria-hidden="true"></div>
+          <div class="media-orbit media-orbit--two" aria-hidden="true"></div>
+          <div class="info-card">
+            <p class="label" data-info-label>Survey dates</p>
+            <p class="value" data-info-value>18-19 Apr 2026</p>
+            <p class="sub" data-info-sub>Structured around fixed screenshots and local imagery for a stable, presentation-ready walkthrough.</p>
+          </div>
+
+          <div class="hero-image-frame">
+            <img
+              src="../assets/demos/monitoring-overview-estuary.png"
+              alt="Regional monitoring overview of the estuary system"
+              data-hero-image
+            />
+            <img
+              src=""
+              alt=""
+              class="hero-image-overlay is-hidden"
+              data-hero-overlay
+            />
+          </div>
+
+          <div class="inset-card">
+            <img
+              src="../assets/monitoring-sections-inset.png"
+              alt="Section profiles and height difference view"
+              data-inset-image
+            />
+          </div>
+
+          <div class="stage-data-band">
+            <article>
+              <span data-band-label="0">Coverage</span>
+              <strong data-band-value="0">8 monitored areas</strong>
+            </article>
+            <article>
+              <span data-band-label="1">Outputs</span>
+              <strong data-band-value="1">Overview, layers and sections</strong>
+            </article>
+            <article>
+              <span data-band-label="2">Use</span>
+              <strong data-band-value="2">Repeat visual evidence</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-grid" aria-label="Monitoring story">
+        <article class="story-card story-card--lead">
+          <div class="label" data-story-kicker>What this demo shows</div>
+          <h2 data-story-title>From estuary overview to evidence-led explanation</h2>
+          <p data-story-body>
+            This demo is based on the full FutureScaping monitoring system and is designed to show
+            how repeat drone surveys can move from regional context into specific monitored areas,
+            comparison views and section evidence without losing the visual thread.
+          </p>
+        </article>
+        <article class="story-card">
+          <div class="label" data-detail-label="0">Client purpose</div>
+          <h3 data-detail-title="0">Explain what has changed</h3>
+          <p data-detail-body="0">
+            The viewer is built to help teams inspect imagery, compare rounds through time and make
+            visible coastal change easier to explain in meetings.
+          </p>
+        </article>
+        <article class="story-card">
+          <div class="label" data-detail-label="1">Core outputs</div>
+          <h3 data-detail-title="1">Ortho, DSM, contours and sections</h3>
+          <p data-detail-body="1">
+            Each monitored area can resolve to aerial imagery, height models, contour exports,
+            section overlays and CSV-backed profile evidence.
+          </p>
+        </article>
+        <article class="story-card">
+          <div class="label" data-detail-label="2">Why it matters</div>
+          <h3 data-detail-title="2">Track bars, channels and exposed sediment</h3>
+          <p data-detail-body="2">
+            Repeating the same survey structure helps reveal how material is shifting, how quickly
+            it is moving and where the estuary geometry is evolving.
+          </p>
+        </article>
+      </section>
+
+      <section class="thumb-strip">
+        <article class="thumb-card">
+          <img src="../assets/demos/monitoring-overview.png" alt="Overview estuary hero" />
+          <strong>Overview</strong>
+          <span>Estuary-scale entry point for the survey round, monitored area sequence and system context.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/demos/monitoring-area1.png" alt="Monitoring area 1" />
+          <strong>Survey Areas</strong>
+          <span>Area-level imagery and metadata ready for repeat inspection and client walkthroughs.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/demos/monitoring-area4-volume-change.png" alt="Monitoring comparison context" />
+          <strong>Compare</strong>
+          <span>Visual comparison views that help show sediment movement, channel shift and local change context.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/monitoring-sections-inset.png" alt="Monitoring sections" />
+          <strong>Sections</strong>
+          <span>Cross-section outputs and overlays that support more technical evidence when questions go deeper.</span>
+        </article>
+      </section>
+
+      <section class="note-row">
+        <article class="note-card">
+          <div class="label">What it shows</div>
+          <p>Survey dates, fixed sections, local context imagery and quick interpretation panels in one clear route.</p>
+        </article>
+        <article class="note-card">
+          <div class="label">Presentation approach</div>
+          <p>This page uses fixed screenshots and local imagery to keep the monitoring workflow clear, stable and easy to follow.</p>
+        </article>
+        <article class="note-card">
+          <div class="label">How it is used</div>
+          <p>Open with the overview, then move into sections and area panels to show how repeat monitoring can be organised and explained.</p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      const monitoringModes = {
+        overview: {
+          lead:
+            "An imagery-first estuary monitoring workflow built to inspect repeat surveys, explain visible coastal change and give clients a clear route from overview to detailed evidence.",
+          info: {
+            label: "Survey scope",
+            value: "Padstow estuary baseline",
+            sub: "Eight monitored areas, repeat survey structure and viewer-first evidence drawn from the full monitoring system."
+          },
+          hero: {
+            src: "../assets/demos/monitoring-overview-estuary.png",
+            alt: "Regional monitoring overview of the estuary system"
+          },
+          inset: {
+            src: "../assets/monitoring-sections-inset.png",
+            alt: "Section profiles and height difference view"
+          },
+          band: [
+            ["Coverage", "8 monitored areas"],
+            ["Outputs", "Overview, layers and sections"],
+            ["Use", "Repeat visual evidence"]
+          ],
+          story: {
+            kicker: "What this demo shows",
+            title: "From estuary overview to evidence-led explanation",
+            body:
+              "This demo is based on the full FutureScaping monitoring system and is designed to show how repeat drone surveys can move from regional context into specific monitored areas, comparison views and section evidence without losing the visual thread."
+          },
+          details: [
+            {
+              label: "Client purpose",
+              title: "Explain what has changed",
+              body: "The viewer is built to help teams inspect imagery, compare rounds through time and make visible coastal change easier to explain in meetings."
+            },
+            {
+              label: "Core outputs",
+              title: "Ortho, DSM, contours and sections",
+              body: "Each monitored area can resolve to aerial imagery, height models, contour exports, section overlays and CSV-backed profile evidence."
+            },
+            {
+              label: "Why it matters",
+              title: "Track bars, channels and exposed sediment",
+              body: "Repeating the same survey structure helps reveal how material is shifting, how quickly it is moving and where the estuary geometry is evolving."
+            }
+          ]
+        },
+        survey: {
+          lead:
+            "Survey Areas focuses on the monitored blocks themselves, showing how each area keeps the same evidence structure so new rounds can be reviewed without changing the interface.",
+          info: {
+            label: "Highlighted area",
+            value: "A5 Porthilly Cove",
+            sub: "A transition zone used to track bars and channels, chosen here as a strong example of the area-based monitoring workflow."
+          },
+          hero: {
+            src: "../assets/demos/monitoring-area5-ortho.jpg",
+            alt: "Orthomosaic survey area from the monitoring system"
+          },
+          inset: {
+            src: "../assets/monitoring-hero-island.png",
+            alt: "Monitoring island visual for the survey area mode"
+          },
+          band: [
+            ["Area role", "Transition zone"],
+            ["Survey round", "18 Apr 2026"],
+            ["Deliverables", "Imagery plus terrain outputs"]
+          ],
+          story: {
+            kicker: "Survey-area view",
+            title: "Area stories give each capture block a purpose",
+            body:
+              "In the source monitoring system, every area carries operational notes, tide timing, planned outputs and a short purpose statement so the imagery can be discussed in context rather than treated as an isolated screenshot."
+          },
+          details: [
+            {
+              label: "Mission role",
+              title: "Track a key bar-and-channel transition",
+              body: "Porthilly Cove is described in the source project as an important transition area where changes to bars and channels are easier to track over time."
+            },
+            {
+              label: "Planned outputs",
+              title: "Aerial image, surface model and future comparisons",
+              body: "The monitoring schema expects each area to support a high-resolution aerial image, terrain model, contour information and future comparison views."
+            },
+            {
+              label: "Field context",
+              title: "Captured as part of a repeatable survey sequence",
+              body: "The value here is not one image on its own, but a consistent area key that can receive the next survey round and be compared without changing the workflow."
+            }
+          ]
+        },
+        compare: {
+          lead:
+            "Compare is where the system starts to explain movement through time, using layers and change context to show where sediment bars, channels and exposed ground are shifting.",
+          info: {
+            label: "Comparison mode",
+            value: "Change context",
+            sub: "The full system is designed for single-layer inspection, transparency overlays, slider comparison and change-highlight views."
+          },
+          hero: {
+            src: "../assets/demos/monitoring-area4-volume-change.png",
+            alt: "Volume change context image from the monitoring system"
+          },
+          inset: {
+            src: "../assets/demos/monitoring-area5-dsm.png",
+            alt: "Colour elevation model from the monitoring system"
+          },
+          band: [
+            ["Viewer modes", "Single, overlay, slider"],
+            ["Evidence", "Visible geomorphic change"],
+            ["Audience", "Client explanation"]
+          ],
+          story: {
+            kicker: "Comparison view",
+            title: "Show change, not just snapshots",
+            body:
+              "The source product roadmap is explicit that comparison matters: the same inspection context should support single-layer viewing, transparency overlays, swipe comparison and change highlights so the conversation stays anchored in the image."
+          },
+          details: [
+            {
+              label: "Why compare",
+              title: "Make sediment movement legible",
+              body: "This is the part of the workflow that turns repeated surveys into a story about shifting bars, changing channels and evolving estuary form."
+            },
+            {
+              label: "Layer support",
+              title: "Height and change context together",
+              body: "DSM-style height outputs help support the visual story by showing where material is sitting higher, lower or differently arranged than before."
+            },
+            {
+              label: "Demo value",
+              title: "Enough to signal the direction of the full tool",
+              body: "For this offline bundle, the aim is to show how a client can move from a regional picture into an evidence-backed comparison moment quickly."
+            }
+          ]
+        },
+        sections: {
+          lead:
+            "Sections takes the monitoring story into more technical evidence, linking fixed section lines and profile outputs to the same monitored areas so deeper review is possible when needed.",
+          info: {
+            label: "Section evidence",
+            value: "Profiles plus overlays",
+            sub: "The full product is rebuilding Sections as a map-plus-profile workspace with linked hover feedback and shared survey context."
+          },
+          hero: {
+            src: "../assets/demos/monitoring-area5-ortho.jpg",
+            alt: "Orthomosaic base image for section review"
+          },
+          inset: {
+            src: "../assets/monitoring-sections-inset.png",
+            alt: "Section lines and section controls view"
+          },
+          overlay: {
+            src: "../assets/demos/monitoring-area5-sections.png",
+            alt: "Section line overlay from the monitoring system"
+          },
+          band: [
+            ["Lines", "Fixed section tracks"],
+            ["Profiles", "CSV-backed sections"],
+            ["Use", "Technical follow-up"]
+          ],
+          story: {
+            kicker: "Section evidence",
+            title: "Bring profile evidence into the same client route",
+            body:
+              "Sections are there for the moment when the conversation needs to go beyond overview imagery and into repeatable cross-sections, profile outputs and more technical evidence about surface form."
+          },
+          details: [
+            {
+              label: "Evidence type",
+              title: "Fixed section lines across monitored ground",
+              body: "The system structure includes section-line overlays and CSV-backed section profiles for each area where section work is required."
+            },
+            {
+              label: "Product direction",
+              title: "Map-plus-profile workspace",
+              body: "The project notes describe Sections as a full-screen map and profile environment with linked hover feedback rather than a disconnected export folder."
+            },
+            {
+              label: "Why it helps",
+              title: "Support detailed technical questions",
+              body: "That means the same demo can start with a broad monitoring story and still give a credible route into more exact terrain evidence when the audience wants detail."
+            }
+          ]
+        }
+      };
+
+      const modeButtons = [...document.querySelectorAll("[data-mode]")];
+      const modeLead = document.querySelector("[data-mode-lead]");
+      const infoLabel = document.querySelector("[data-info-label]");
+      const infoValue = document.querySelector("[data-info-value]");
+      const infoSub = document.querySelector("[data-info-sub]");
+      const heroImage = document.querySelector("[data-hero-image]");
+      const heroOverlay = document.querySelector("[data-hero-overlay]");
+      const insetImage = document.querySelector("[data-inset-image]");
+      const storyKicker = document.querySelector("[data-story-kicker]");
+      const storyTitle = document.querySelector("[data-story-title]");
+      const storyBody = document.querySelector("[data-story-body]");
+
+      function applyMode(modeKey) {
+        const mode = monitoringModes[modeKey];
+        if (!mode) return;
+
+        modeButtons.forEach((button) => {
+          const active = button.dataset.mode === modeKey;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+
+        modeLead.textContent = mode.lead;
+        infoLabel.textContent = mode.info.label;
+        infoValue.textContent = mode.info.value;
+        infoSub.textContent = mode.info.sub;
+
+        heroImage.src = mode.hero.src;
+        heroImage.alt = mode.hero.alt;
+
+        if (mode.overlay) {
+          heroOverlay.src = mode.overlay.src;
+          heroOverlay.alt = mode.overlay.alt;
+          heroOverlay.classList.remove("is-hidden");
+        } else {
+          heroOverlay.src = "";
+          heroOverlay.alt = "";
+          heroOverlay.classList.add("is-hidden");
+        }
+
+        insetImage.src = mode.inset.src;
+        insetImage.alt = mode.inset.alt;
+
+        mode.band.forEach((entry, index) => {
+          const label = document.querySelector(`[data-band-label="${index}"]`);
+          const value = document.querySelector(`[data-band-value="${index}"]`);
+          if (label) label.textContent = entry[0];
+          if (value) value.textContent = entry[1];
+        });
+
+        storyKicker.textContent = mode.story.kicker;
+        storyTitle.textContent = mode.story.title;
+        storyBody.textContent = mode.story.body;
+
+        mode.details.forEach((detail, index) => {
+          const label = document.querySelector(`[data-detail-label="${index}"]`);
+          const title = document.querySelector(`[data-detail-title="${index}"]`);
+          const body = document.querySelector(`[data-detail-body="${index}"]`);
+          if (label) label.textContent = detail.label;
+          if (title) title.textContent = detail.title;
+          if (body) body.textContent = detail.body;
+        });
+      }
+
+      modeButtons.forEach((button) => {
+        button.addEventListener("click", () => applyMode(button.dataset.mode));
+      });
+
+      applyMode("overview");
+    </script>
+  </body>
+</html>

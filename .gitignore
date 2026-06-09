@@ -19,7 +19,6 @@ dist
 Thumbs.db
 .vscode
 
-# Separate tablet/demo bundles - not part of homepage repo
+# Separate archive bundles - not part of homepage repo
 *.zip
-tablet-bundle/
-tablet-bundle-folder/
+tablet-bundle-folder.zip

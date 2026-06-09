@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureScaping SiteView Demo</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../demo-page.css" />
+  </head>
+  <body>
+    <main class="demo-shell">
+      <div class="demo-topbar">
+        <a class="demo-back" href="../index.html">Back to Labs</a>
+      </div>
+
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <div class="brand">
+            <div class="mark" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div>
+              <p class="brand-name">FutureScaping Labs</p>
+              <p class="brand-sub">SiteView demo</p>
+            </div>
+          </div>
+          <div class="hero-heading">
+            <p class="eyebrow">Deliverables-led workspace</p>
+            <h1>SiteView</h1>
+            <p class="summary">
+              A client-facing route through survey outputs, mapped layers, planning imagery and
+              downloadable evidence, presented in the same polished shell as the monitoring demo.
+            </p>
+          </div>
+          <p class="mode-lead" data-mode-lead>
+            A practical evidence route through orthomosaic, height layers, planning visuals and
+            supporting outputs, presented in the same clear shell as the rest of the demo suite.
+          </p>
+          <div class="nav-rail" role="tablist" aria-label="SiteView views">
+            <button class="nav-pill is-active" type="button" data-mode="overview" aria-pressed="true"><span>Overview</span></button>
+            <button class="nav-pill" type="button" data-mode="layers" aria-pressed="false"><span>Map Layers</span></button>
+            <button class="nav-pill" type="button" data-mode="renders" aria-pressed="false"><span>Renders</span></button>
+            <button class="nav-pill" type="button" data-mode="downloads" aria-pressed="false"><span>Downloads</span></button>
+          </div>
+        </div>
+
+        <div class="media-stage">
+          <div class="media-glow"></div>
+          <div class="media-gridlines" aria-hidden="true"></div>
+          <div class="media-orbit media-orbit--one" aria-hidden="true"></div>
+          <div class="media-orbit media-orbit--two" aria-hidden="true"></div>
+          <div class="info-card">
+            <p class="label" data-info-label>Workspace role</p>
+            <p class="value" data-info-value>SiteView evidence route</p>
+            <p class="sub" data-info-sub>Offline route through orthomosaic, DSM, contours and rendered review outputs.</p>
+          </div>
+
+          <div class="hero-image-frame">
+            <img
+              src="../assets/survey-evidence-hero.png"
+              alt="Survey evidence planning workspace hero image"
+              data-hero-image
+            />
+          </div>
+
+          <div class="inset-card">
+            <img
+              src="../assets/survey-evidence-inset.png"
+              alt="Survey evidence inset showing comparison workspace"
+              data-inset-image
+            />
+          </div>
+
+          <div class="stage-data-band">
+            <article>
+              <span data-band-label="0">Outputs</span>
+              <strong data-band-value="0">Layers, visuals and downloads</strong>
+            </article>
+            <article>
+              <span data-band-label="1">Audience</span>
+              <strong data-band-value="1">Designers, planners and clients</strong>
+            </article>
+            <article>
+              <span data-band-label="2">Use</span>
+              <strong data-band-value="2">Straightforward evidence review</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-grid" aria-label="SiteView story">
+        <article class="story-card story-card--lead">
+          <div class="label" data-story-kicker>What this demo shows</div>
+          <h2 data-story-title>Evidence layers and planning outputs in one route</h2>
+          <p data-story-body>
+            This SiteView variant is arranged as a client-facing evidence pack, combining mapped
+            outputs, rendered material and download-ready layers inside the same presentation shell.
+          </p>
+        </article>
+        <article class="story-card">
+          <div class="label" data-detail-label="0">Core use</div>
+          <h3 data-detail-title="0">Bring survey outputs into one client workspace</h3>
+          <p data-detail-body="0">
+            The emphasis is on showing how orthomosaic, height layers and planning visuals can be
+            reviewed together instead of being split across loose files.
+          </p>
+        </article>
+        <article class="story-card">
+          <div class="label" data-detail-label="1">Key value</div>
+          <h3 data-detail-title="1">Turn raw capture into something usable</h3>
+          <p data-detail-body="1">
+            This route shows how drone outputs become material that designers,
+            planners and clients can actually work with.
+          </p>
+        </article>
+        <article class="story-card">
+          <div class="label" data-detail-label="2">Why it matters</div>
+          <h3 data-detail-title="2">Keep context, visuals and downloads together</h3>
+          <p data-detail-body="2">
+            Instead of explaining layers, visuals and PDFs separately, the interface keeps the
+            whole pack moving in one simple visual story.
+          </p>
+        </article>
+      </section>
+
+      <section class="thumb-strip">
+        <article class="thumb-card">
+          <img src="../assets/demos/siteview-layer-hero.png" alt="Floating site layer hero" />
+          <strong>3D context</strong>
+          <span>Floating terrain and building massing for quick site understanding.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/demos/siteview-main-image.jpg" alt="Orthomosaic base image" />
+          <strong>Orthomosaic</strong>
+          <span>Base site image for orientation, briefing and design review.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/demos/siteview-height-colours.png" alt="Height colours image" />
+          <strong>Height colours</strong>
+          <span>Level-reading layer to support site understanding and design discussion.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/demos/siteview-contours.png" alt="Contour lines image" />
+          <strong>Contours</strong>
+          <span>Clean contour overlay for landform explanation and briefing.</span>
+        </article>
+      </section>
+
+      <section class="note-row">
+        <article class="note-card">
+          <div class="label">What it shows</div>
+          <p>A deliverables route: survey layers, planning visuals and downloadable supporting material in one place.</p>
+        </article>
+        <article class="note-card">
+          <div class="label">Offline compromise</div>
+          <p>This version favours stable local evidence panels over live web-linked viewers and panorama tools.</p>
+        </article>
+        <article class="note-card">
+          <div class="label">How it is used</div>
+          <p>Use it to show how raw drone outputs become something designers, planners and clients can actually work with.</p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      const siteviewModes = {
+        overview: {
+          lead:
+            "A practical evidence route through orthomosaic, height layers, planning visuals and supporting outputs, presented in the same clear shell as the rest of the demo suite.",
+          info: {
+            label: "Workspace role",
+            value: "SiteView evidence route",
+            sub: "Offline route through orthomosaic, DSM, contours and rendered review outputs."
+          },
+          hero: {
+            src: "../assets/survey-evidence-hero.png",
+            alt: "Survey evidence planning workspace hero image"
+          },
+          inset: {
+            src: "../assets/survey-evidence-inset.png",
+            alt: "Survey evidence inset showing comparison workspace"
+          },
+          band: [
+            ["Outputs", "Layers, visuals and downloads"],
+            ["Audience", "Designers, planners and clients"],
+            ["Use", "Straightforward evidence review"]
+          ],
+          story: {
+            kicker: "What this demo shows",
+            title: "Evidence layers and planning outputs in one route",
+            body:
+              "This SiteView variant is arranged as a client-facing evidence pack, combining mapped outputs, rendered material and download-ready layers inside the same presentation shell."
+          },
+          details: [
+            {
+              label: "Core use",
+              title: "Bring survey outputs into one client workspace",
+              body: "The emphasis is on showing how orthomosaic, height layers and planning visuals can be reviewed together instead of being split across loose files."
+            },
+            {
+              label: "Key value",
+              title: "Turn raw capture into something usable",
+              body: "This route shows how drone outputs become material that designers, planners and clients can actually work with."
+            },
+            {
+              label: "Why it matters",
+              title: "Keep context, visuals and downloads together",
+              body: "Instead of explaining layers, visuals and PDFs separately, the interface keeps the whole pack moving in one simple visual story."
+            }
+          ]
+        },
+        layers: {
+          lead:
+            "Map Layers brings the technical evidence forward: orthomosaic, height colours and contours become the main story while the supporting inset keeps the comparison context close at hand.",
+          info: {
+            label: "Layer focus",
+            value: "Orthomosaic plus height data",
+            sub: "Base imagery and surface-reading layers arranged for clear client explanation."
+          },
+          hero: {
+            src: "../assets/demos/siteview-main-image.jpg",
+            alt: "Orthomosaic base image"
+          },
+          inset: {
+            src: "../assets/demos/siteview-height-colours.png",
+            alt: "Height colours layer"
+          },
+          band: [
+            ["Primary layer", "Orthomosaic"],
+            ["Support layer", "Height colours"],
+            ["Outcome", "Clear landform reading"]
+          ],
+          story: {
+            kicker: "Map layers",
+            title: "Move from a clean base map into technical support layers",
+            body:
+              "This mode shows how the pack can shift from the straightforward orthomosaic into the surface-reading outputs that help explain slope, level change and site form."
+          },
+          details: [
+            {
+              label: "Base map",
+              title: "Start with a simple visual anchor",
+              body: "The orthomosaic gives everyone the same orientation point before more technical layers are introduced."
+            },
+            {
+              label: "Technical support",
+              title: "Use colour to read levels quickly",
+              body: "Height colours help make subtle changes in form easier to discuss without jumping straight into specialist terminology."
+            },
+            {
+              label: "Client value",
+              title: "Explain terrain without losing the audience",
+              body: "It keeps the explanation accessible while still feeling grounded in proper survey output."
+            }
+          ]
+        },
+        renders: {
+          lead:
+            "Renders shifts the focus to design communication, using site-based visual outputs to connect the survey base to the planning conversation.",
+          info: {
+            label: "Visual mode",
+            value: "Planning renders",
+            sub: "Rendered visuals and floating context views positioned as part of the same evidence route."
+          },
+          hero: {
+            src: "../assets/demos/siteview-layer-hero.png",
+            alt: "Floating terrain and building massing view"
+          },
+          inset: {
+            src: "../assets/demos/siteview-contours.png",
+            alt: "Contour support layer"
+          },
+          band: [
+            ["Visual type", "Rendered context"],
+            ["Support", "Contours"],
+            ["Use", "Design explanation"]
+          ],
+          story: {
+            kicker: "Planning visuals",
+            title: "Link rendered outputs back to the survey base",
+            body:
+              "Rather than treating visuals as a separate pack, the render mode keeps them in the same frame as the survey evidence so the planning story stays joined up."
+          },
+          details: [
+            {
+              label: "Presentation role",
+              title: "Show the design in place",
+              body: "Rendered context views help clients and stakeholders understand how proposals sit within the surveyed landscape."
+            },
+            {
+              label: "Survey link",
+              title: "Keep technical support nearby",
+              body: "The supporting contour layer keeps the visual grounded in the same measured site context."
+            },
+            {
+              label: "Why it works",
+              title: "One route for evidence and communication",
+              body: "It reduces the jump between technical data and public-facing presentation material."
+            }
+          ]
+        },
+        downloads: {
+          lead:
+            "Downloads represents the final handoff moment: mapped outputs, supporting packs and visual material are framed as a ready-to-share evidence set.",
+          info: {
+            label: "Delivery mode",
+            value: "Client-ready handoff",
+            sub: "A simple end point for the outputs that need to leave the interface as documents or packaged evidence."
+          },
+          hero: {
+            src: "../assets/demos/siteview-main-image.jpg",
+            alt: "Orthomosaic export prepared for download"
+          },
+          inset: {
+            src: "../assets/demos/siteview-contours.png",
+            alt: "Contour layer export prepared for download"
+          },
+          band: [
+            ["Pack type", "Mapped exports"],
+            ["Support", "Contour layer"],
+            ["Use", "Client handoff"]
+          ],
+          story: {
+            kicker: "Downloads",
+            title: "End with a pack that is ready to leave the demo",
+            body:
+              "This mode is about the final organisation of outputs: maps, views and evidence panels that can be assembled into something clean enough to share onward."
+          },
+          details: [
+            {
+              label: "Delivery route",
+              title: "Bring outputs together before export",
+              body: "It helps explain how the survey material is collected into a format that is understandable beyond the live demo itself."
+            },
+            {
+              label: "Supporting material",
+              title: "Keep the map outputs together",
+              body: "Orthomosaic and contour exports stay paired so the delivered pack still feels tied to the surveyed site."
+            },
+            {
+              label: "Client outcome",
+              title: "A cleaner finish to the conversation",
+              body: "The result feels less like a folder of files and more like a joined-up evidence product."
+            }
+          ]
+        }
+      };
+
+      const siteviewButtons = [...document.querySelectorAll("[data-mode]")];
+      const siteviewLead = document.querySelector("[data-mode-lead]");
+      const infoLabel = document.querySelector("[data-info-label]");
+      const infoValue = document.querySelector("[data-info-value]");
+      const infoSub = document.querySelector("[data-info-sub]");
+      const siteviewHeroImage = document.querySelector("[data-hero-image]");
+      const siteviewInsetImage = document.querySelector("[data-inset-image]");
+      const storyKicker = document.querySelector("[data-story-kicker]");
+      const storyTitle = document.querySelector("[data-story-title]");
+      const storyBody = document.querySelector("[data-story-body]");
+
+      function applySiteviewMode(modeKey) {
+        const mode = siteviewModes[modeKey];
+        if (!mode) return;
+
+        siteviewButtons.forEach((button) => {
+          const active = button.dataset.mode === modeKey;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+
+        siteviewLead.textContent = mode.lead;
+        infoLabel.textContent = mode.info.label;
+        infoValue.textContent = mode.info.value;
+        infoSub.textContent = mode.info.sub;
+        siteviewHeroImage.src = mode.hero.src;
+        siteviewHeroImage.alt = mode.hero.alt;
+        siteviewInsetImage.src = mode.inset.src;
+        siteviewInsetImage.alt = mode.inset.alt;
+
+        mode.band.forEach((entry, index) => {
+          const label = document.querySelector(`[data-band-label="${index}"]`);
+          const value = document.querySelector(`[data-band-value="${index}"]`);
+          if (label) label.textContent = entry[0];
+          if (value) value.textContent = entry[1];
+        });
+
+        storyKicker.textContent = mode.story.kicker;
+        storyTitle.textContent = mode.story.title;
+        storyBody.textContent = mode.story.body;
+
+        mode.details.forEach((detail, index) => {
+          const label = document.querySelector(`[data-detail-label="${index}"]`);
+          const title = document.querySelector(`[data-detail-title="${index}"]`);
+          const body = document.querySelector(`[data-detail-body="${index}"]`);
+          if (label) label.textContent = detail.label;
+          if (title) title.textContent = detail.title;
+          if (body) body.textContent = detail.body;
+        });
+      }
+
+      siteviewButtons.forEach((button) => {
+        button.addEventListener("click", () => applySiteviewMode(button.dataset.mode));
+      });
+
+      applySiteviewMode("overview");
+    </script>
+  </body>
+</html>

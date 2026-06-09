@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureScaping Survey Evidence Pack</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../demo-page.css" />
+  </head>
+  <body>
+    <main class="demo-shell">
+      <div class="demo-topbar">
+        <a class="demo-back" href="../index.html">Back to Labs</a>
+      </div>
+
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <div class="brand">
+            <div class="mark" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div>
+              <p class="brand-name">FutureScaping Labs</p>
+              <p class="brand-sub">Survey evidence pack</p>
+            </div>
+          </div>
+          <p class="eyebrow">Planning and presentation</p>
+          <h1>Survey Evidence<br />Planning Visuals</h1>
+          <p class="summary">
+            Drone mapping, 3D models, viewpoint evidence and map layers presented in one clear
+            planning-focused workspace.
+          </p>
+          <p class="mode-lead" data-mode-lead>
+            Start with the overall planning model, then step into scene views, saved viewpoints and
+            technical mapping layers without leaving the same presentation route.
+          </p>
+          <div class="nav-rail" role="tablist" aria-label="Survey evidence views">
+            <button class="nav-pill is-active" type="button" data-mode="overview" aria-pressed="true"><span>Overview</span></button>
+            <button class="nav-pill" type="button" data-mode="scene" aria-pressed="false"><span>3D Scene</span></button>
+            <button class="nav-pill" type="button" data-mode="viewpoints" aria-pressed="false"><span>Viewpoints</span></button>
+            <button class="nav-pill" type="button" data-mode="layers" aria-pressed="false"><span>Map Layers</span></button>
+          </div>
+        </div>
+
+        <div class="media-stage">
+          <div class="media-glow"></div>
+          <div class="hero-image-frame">
+            <img
+              src="../assets/demos/siteview-labs-hero-shell.png"
+              alt="SiteView planning evidence terrain model preview"
+              data-hero-image
+            />
+          </div>
+
+          <div class="inset-card">
+            <img
+              src="../assets/siteview-inset.png"
+              alt="Detailed shed visual inset"
+              data-inset-image
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="thumb-strip">
+        <article class="thumb-card">
+          <img src="../assets/demos/siteview-labs-ortho.jpg" alt="Orthomosaic layer" />
+          <strong>Orthomosaic</strong>
+          <span>Base map for site briefing, drawings and design coordination.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/demos/siteview-labs-dsm.png" alt="DSM layer" />
+          <strong>Surface model</strong>
+          <span>Height-based reading of the site and surrounding landform.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/demos/siteview-labs-contour.png" alt="Contour layer" />
+          <strong>Contours</strong>
+          <span>Simple supporting landform layer for explainers and download packs.</span>
+        </article>
+        <article class="thumb-card">
+          <img src="../assets/demos/siteview-labs-viewport-map.png" alt="Viewport location map" />
+          <strong>Viewport map</strong>
+          <span>Location reference for rendered planning visuals and evidence sequencing.</span>
+        </article>
+      </section>
+
+      <section class="note-row">
+        <article class="note-card">
+          <div class="label">What it shows</div>
+          <p>How SiteView can combine context, 3D massing, map layers and visuals in one client-facing experience.</p>
+        </article>
+        <article class="note-card">
+          <div class="label">Offline compromise</div>
+          <p>This bundle focuses on the strongest planning screens and supporting layers rather than the live online model links.</p>
+        </article>
+        <article class="note-card">
+          <div class="label">How it is used</div>
+          <p>Lead with the main hero, then use the inset and supporting layer strip to explain the workflow from drone capture to planning review.</p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      const evidenceModes = {
+        overview: {
+          lead:
+            "Start with the overall planning model, then step into scene views, saved viewpoints and technical mapping layers without leaving the same presentation route.",
+          hero: {
+            src: "../assets/demos/siteview-labs-hero-shell.png",
+            alt: "Floating planning model hero"
+          },
+          inset: {
+            src: "../assets/siteview-inset.png",
+            alt: "Detailed shed visual inset"
+          }
+        },
+        scene: {
+          lead:
+            "3D Scene is the quick spatial read: the proposal sits in a recognisable terrain model so massing, edge conditions and landscape setting are clear straight away.",
+          hero: {
+            src: "../assets/demos/siteview-labs-view-a.jpg",
+            alt: "Rendered three-dimensional planning scene"
+          },
+          inset: {
+            src: "../assets/demos/siteview-labs-view-c.jpg",
+            alt: "Alternate rendered planning viewpoint"
+          }
+        },
+        viewpoints: {
+          lead:
+            "Viewpoints gives a structured route through the saved camera positions, linking the overall map to the named views used for review, consultation and planning discussion.",
+          hero: {
+            src: "../assets/demos/siteview-labs-viewport-map.png",
+            alt: "Viewport map with labelled camera positions"
+          },
+          inset: {
+            src: "../assets/siteview-viewpoints.png",
+            alt: "Viewpoint thumbnails and camera list"
+          }
+        },
+        layers: {
+          lead:
+            "Map Layers switches the focus to the technical base: orthomosaic, height model and contours can be shown as supporting evidence when the conversation moves from presentation to survey detail.",
+          hero: {
+            src: "../assets/demos/siteview-labs-ortho.jpg",
+            alt: "Orthomosaic planning base layer"
+          },
+          inset: {
+            src: "../assets/demos/siteview-labs-contour.png",
+            alt: "Contour layer inset"
+          }
+        }
+      };
+
+      const evidenceButtons = [...document.querySelectorAll("[data-mode]")];
+      const evidenceLead = document.querySelector("[data-mode-lead]");
+      const evidenceHeroImage = document.querySelector("[data-hero-image]");
+      const evidenceInsetImage = document.querySelector("[data-inset-image]");
+
+      function applyEvidenceMode(modeKey) {
+        const mode = evidenceModes[modeKey];
+        if (!mode) return;
+
+        evidenceButtons.forEach((button) => {
+          const active = button.dataset.mode === modeKey;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+
+        evidenceLead.textContent = mode.lead;
+        evidenceHeroImage.src = mode.hero.src;
+        evidenceHeroImage.alt = mode.hero.alt;
+        evidenceInsetImage.src = mode.inset.src;
+        evidenceInsetImage.alt = mode.inset.alt;
+      }
+
+      evidenceButtons.forEach((button) => {
+        button.addEventListener("click", () => applyEvidenceMode(button.dataset.mode));
+      });
+
+      applyEvidenceMode("overview");
+    </script>
+  </body>
+</html>
